@@ -204,25 +204,29 @@ Item {
             }else if(values.state === 1){
                 appState = "Running";
             }else if(values.state === 2){
-                appState = "Running (Tiltback Duty)";
+                appState = "Running (Tiltback)";
             }else if(values.state === 3){
-                appState = "Running (Tiltback High Voltage)";
+                appState = "Running (TBHV/Wheelslip)";
             }else if(values.state === 4){
-                appState = "Running (Tiltback Low Voltage)";
+                appState = "Running (TBLV/Darkride)";
             }else if(values.state === 5){
                 appState = "Running (Tiltback Constant)";
             }else if(values.state === 6){
-                appState = "Fault (Pitch Angle)";
+                appState = "Stop (Pitch Angle)";
             }else if(values.state === 7){
-                appState = "Fault (Roll Angle)";
+                appState = "Stop (Roll Angle)";
             }else if(values.state === 8){
-                appState = "Fault (Switch Half)";
+                appState = "Stop (Switch Half)";
             }else if(values.state === 9){
-                appState = "Fault (Switch FULL)";
+                appState = "Stop (Switch FULL)";
             }else if(values.state === 10){
-                appState = "Fault (Duty)";
+                appState = "Stop (Duty)";
             }else if(values.state === 11){
-                appState = "Initial";
+                appState = "Initial/Startup";
+            }else if(values.state === 12){
+                appState = "Reverse Stop";
+            }else if(values.state === 13){
+                appState = "Quickstop";
             }else{
                 appState = "Unknown";
             }
